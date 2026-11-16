@@ -15,5 +15,8 @@ export class AppService {
  getHello(): string {
   return 'Hello World!';
 }
+findOne(id: number) {
+  return this.trips.find(trip => trip.id === id);
+}
 
 }
