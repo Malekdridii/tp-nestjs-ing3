@@ -8,13 +8,11 @@ export class AppController {
   @Get()
   getHello(): string {
     return this.appService.getHello();
+  
   }
-
-@Controller('travel')
-export class TravelController {
-
-  @Post()
-  create(): string {
-    return "planifier un nouveau voyage ici";
-  }
+  @Get('travel')
+findAll() {
+  return this.appService.findAll();
+}
+ 
 }

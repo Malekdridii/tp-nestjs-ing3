@@ -8,8 +8,12 @@ export class AppService {
     {
       id: 2,name: 'to morocco',price:4000}
   ];
-  
-  getHello(): string {
-    return 'Hello World!';
-  }
+
+ findAll(){
+    return this.trips;
+ }
+ getHello(): string {
+  return 'Hello World!';
+}
+
 }
